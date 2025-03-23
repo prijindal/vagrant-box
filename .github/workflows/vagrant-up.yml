@@ -16,6 +16,8 @@ jobs:
     #     key: ${{ runner.os }}-vagrant-${{ hashFiles('Vagrantfile') }}
     #     restore-keys: |
     #       ${{ runner.os }}-vagrant-
+    - name: Install Virtualbox
+      run: brew install --cask virtualbox
     - name: Install vagrant
       run: brew install --cask vagrant
 
