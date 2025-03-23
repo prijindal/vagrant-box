@@ -17,7 +17,7 @@ jobs:
     #     restore-keys: |
     #       ${{ runner.os }}-vagrant-
     - name: Install vagrant
-      run: brew install vagrant
+      run: brew install --cask vagrant
 
     - name: Show Vagrant version
       run: vagrant --version
